@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Tarefas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <h2>Daily Check</h2>
+        <div>
+            <a href="index.html">Home</a>
+            <a href="temperatura.html">Temperatura</a>
+            <a href="tarefas.html">Tarefas</a>
+        </div>
+    </nav>
+
+    <h1>Gerenciar Tarefas</h1>
+
+    <button onclick="cadastro.classList.remove('oculto')">Nova Tarefa</button>
+
+    <main></main>
+
+    <div id="cadastro" class="modal oculto">
+        <div class="janela">
+            <h2>Nova Tarefa</h2>
+
+            <form id="formCad">
+                <input id="nome" placeholder="Nome" required>
+                <textarea id="descricao" placeholder="Descrição"></textarea>
+
+                <label>Data Início</label>
+                <input type="date" id="dataInicio">
+
+                <label>Data Fim</label>
+                <input type="date" id="dataFim">
+
+                <input id="urlImagem" placeholder="URL da imagem">
+
+                <div class="botoes">
+                    <button type="submit">Salvar</button>
+                    <button type="button" onclick="cadastro.classList.add('oculto')">Cancelar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div id="detalhes" class="modal oculto">
+        <div class="janela">
+            <h2 id="tituloTarefa"></h2>
+
+            <img id="imgTarefa">
+
+            <input id="nomeEdit">
+            <textarea id="descricaoEdit"></textarea>
+            <input id="imgEdit">
+
+            <input type="date" id="dataInicioEdit">
+            <input type="date" id="dataTerminoEdit">
+
+            <button onclick="salvarEdicao()">Salvar</button>
+            <button onclick="excluirTarefaAtual()">Excluir</button>
+            <button onclick="cancelarEdicao()">Cancelar</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

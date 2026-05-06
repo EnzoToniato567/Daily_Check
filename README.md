@@ -109,10 +109,11 @@ POST /api/tarefas/cadastrar
 Content-Type: application/json
 
 {
-  "titulo": "Estudar JavaScript",
-  "descricao": "Revisar conceitos avançados",
-  "prioridade": "alta",
-  "data_vencimento": "2026-05-10"
+  "nome": "Tarefa 1",
+  "descricao": "Descrição 1",
+  "dataInicio": "2026-05-06",
+  "dataFim": "2026-05-06",
+  "imagem": "-URL Image-"
 }
 ```
 

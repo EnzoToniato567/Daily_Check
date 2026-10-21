@@ -1,12 +1,12 @@
-# Daily_Check 📋
+# Daily_Check
 
 Aplicação fullstack para gerenciamento de tarefas diárias com interface responsiva e API RESTful.
 
-## 🎯 Sobre o Projeto
+## Sobre o Projeto
 
 Daily_Check é uma aplicação web completa para controlar suas tarefas do dia a dia. Com uma interface simples e intuitiva, você pode criar, visualizar, atualizar e deletar tarefas facilmente.
 
-## 🛠️ Tecnologias
+## Tecnologias
 
 ### Backend
 - **Node.js** - Runtime JavaScript
@@ -19,7 +19,7 @@ Daily_Check é uma aplicação web completa para controlar suas tarefas do dia a
 - **CSS3** - Estilização
 - **JavaScript (Vanilla)** - Interatividade
 
-## 📁 Estrutura do Projeto
+## Estrutura do Projeto
 
 ```
 Daily_Check/
@@ -49,7 +49,7 @@ Daily_Check/
     └── assets/
 ```
 
-## 🚀 Como Começar
+## Como Começar
 
 ### Pré-requisitos
 - Node.js (v16 ou superior)
@@ -117,11 +117,11 @@ Content-Type: application/json
 }
 ```
 
-## 🗄️ Banco de Dados
+## Banco de Dados
 
 O schema do banco de dados é gerenciado pelo Prisma. Verifique o arquivo `prisma/schema.prisma` para ver a estrutura completa das tabelas.
 
-## 📋 Scripts Disponíveis
+## Scripts Disponíveis
 
 ```bash
 # Modo desenvolvimento (com hot reload)
@@ -134,24 +134,16 @@ npx prisma generate
 npx prisma studio
 ```
 
-## 🎨 Páginas Frontend
+## Páginas Frontend
 
 - **index.html** - Página principal
 - **tarefas.html** - Gerenciador de tarefas
 - **temperatura.html** - Página adicional
 
-## 📝 Notas Importantes
+## Notas Importantes
 
 - O servidor Express está configurado com CORS habilitado para comunicação com o frontend
 - As migrations estão versionadas e sincronizadas com o Prisma
 - O modo `--watch` do Node.js permite desenvolvimento com hot reload
-
-## 🤝 Contribuição
-
-Sinta-se livre para fazer melhorias! Faça um fork, crie uma branch para sua feature e envie um pull request.
-
-## 📄 Licença
-
-Este projeto é de uso livre.
 
 ---
